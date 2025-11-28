@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ферма с поливом</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ферма с поливом</h1>
+        
+        <div class="main-content">
+            <div class="tools-panel">
+                <button class="tool active" id="cursor" type="button">
+                    Курсор - просмотр информации о клетке
+                </button>
+                <button class="tool" id="shovel" type="button">
+                    Лопата - убирать растения
+                </button>
+                <button class="tool" id="marsh-seeds" type="button">
+                    Болотник - требуется вода рядом (1 клетка)
+                </button>
+                <button class="tool" id="potato-seeds" type="button">
+                    Картошка - требуется вода на расстоянии 2-3 клеток
+                </button>
+                <button class="tool" id="cactus-seeds" type="button">
+                    Кактус - требуется вода на расстоянии 4+ клеток
+                </button>
+                <button class="tool" id="bucket" type="button">
+                    Ведро - добавлять или убирать воду
+                </button>
+            </div>
+            
+            <div class="game-area">
+                <div class="grid" id="grid"></div>
+                
+                <div class="info-panel">
+                    <h3>Информация о клетке</h3>
+                    <p id="cell-info">Выберите клетку для просмотра информации</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>Как играть:</h3>
+            <ul>
+                <li><strong>Курсор</strong> - выберите для просмотра информации о клетке</li>
+                <li><strong>Лопата</strong> - убирает растения с клетки</li>
+                <li><strong>Болотник</strong> - требует воду на расстоянии 1 клетки</li>
+                <li><strong>Картошка</strong> - требует воду на расстоянии 2-3 клеток</li>
+                <li><strong>Кактус</strong> - требует воду на расстоянии 4+ клеток</li>
+                <li><strong>Ведро</strong> - превращает землю в воду и обратно</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
